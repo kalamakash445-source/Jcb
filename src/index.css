@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #0c0a09;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(250, 204, 21, 0.04), transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(250, 204, 21, 0.03), transparent 50%);
+  background-attachment: fixed;
+  color: #fafafa;
+}
+
+/* 3D Glassmorphism Utilities */
+.glass-panel {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.gold-button-3d {
+  background: linear-gradient(135deg, #fce7f3 0%, #fde047 20%, #eab308 80%, #a16207 100%);
+  border: none;
+  box-shadow: 
+    0 10px 25px -5px rgba(234, 179, 8, 0.4),
+    0 4px 10px -2px rgba(234, 179, 8, 0.2),
+    inset 1px 2px 2px rgba(255, 255, 255, 0.6),
+    inset -1px -2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+  color: #422006;
+}
+
+.dark-button-3d {
+  background: linear-gradient(145deg, #262626, #171717);
+  box-shadow: 
+    0 8px 16px -4px rgba(0, 0, 0, 0.5),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.1),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.input-3d {
+  background: #0a0a0a;
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.6), 
+    inset -1px -1px 2px rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
